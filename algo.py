@@ -1,12 +1,16 @@
 
-import pandas_datareader as web
-import matplotlib as plt
+from statsmodels.regression.rolling import RollingOLS
+import pandas_datareader.data as web
+import matplotlib.pyplot as plt
 import statsmodels.api as sm
+from numpy import nan as npNaN
 import pandas as pd
 import numpy as np
 import datetime as dt
 import yfinance as yf
+import pandas_ta as ta
 import warnings
+
 warnings.filterwarnings('ignore')
 
 
